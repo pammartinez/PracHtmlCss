@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GO</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/principal.css">
+  <link rel="stylesheet" href="css/navbar-flexbox.css">
+  <link rel="stylesheet" href="css/peliculas.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"  href="css/font-awesome.min.css">
+<link rel="stylesheet" 
+href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+        <nav class="navbar">
+                <!-- Logo/nombre página -->
+                <div class="logo">GO!</div>
+          
+                <input type="checkbox" id="burger-checkbox">
+                <label for="burger-checkbox" class="burger-label"></label>
+          
+                <!-- Enlaces de navegación -->
+                <ul class="navbar-list">
+                  <li class="navbar-item"><a href="#header">Inicio</a></li>
+                  <li class="navbar-item"><a href="#que-hago">Novedades</a></li>
+                  <li class="navbar-item"><a href="#quien-soy">Series</a></li>
+                  <li class="navbar-item"><a href="#mis-batallas">Películas</a></li>
+                 
+                  <li class="navbar-item">                    
+                    <form>                     
+                          <input type="search" id="miBusqueda" name="mibusqueda"
+                           placeholder="Buscar"  size="5" maxlength="50" > 
+                           
+                           <i class="material-icons lupa">search</i>
+                          
+                          
+                      </form></li>
+                   
+                  <li class="navbar-item"><a href="index.html">Cerrar Sesión</a></li>
+                </ul>
+              </nav>
+
+
+<!-- Formulario de busqueda -->
+<div class="form_busca">    
+        <form action="principal.html" method="" name="" target="" enctype=""> 
+        <!-- Usuario -->                   
+        <input type="search" id="search" name ="search">
+        </form>
+</div>
+
+<div class="login_box">    
+</div>
+
+<!-- Grid de peliculas  -->
+<section id="mis-batallas">
+  <h2>NOVEDADES</h2>
+  <div class="grid-container">           
+   <!--<article class="grid-item">
+      <div class="cimagen">
+          <img src="./img/joker.jpg"    alt="El joker"/>                
+      </div>
+      <div class="ctxt"> 
+          pruebadfsdf
+      </div>
+    </article>-->
+
+    <article class="grid-item">
+        <div class="card">
+                <div class="card-body">
+                  <img     src="./img/joker.jpg"  alt="El joker">
+                </div>
+                <a href="ficha.html">
+                    <div class="card-overlay">
+                      <h2>Titulo</h2>
+                      <h3>Calificación: 8</h3>
+                      <h4>2019</h4>
+                      <p>Sipnosis: Esto es un ejemplo de texto
+                        que aparecera sobre la imagen.
+                      </p>
+                      Actores:Actor 1, Actor 2.
+                    </div>
+                 </a>
+            </div>
+      </article>
+
+    <article class="grid-item">
+        <div class="card">
+                <div class="card-body">
+                  <img     src="./img/hacialasestrellas.jpg"  alt="imagen hacia las estrellas">
+                </div>
+                <a href="ficha.html">
+                    <div class="card-overlay">
+                      <h2>Titulo</h2>
+                      <h3>Calificación: 8</h3>
+                      <h4>2019</h4>
+                      <p>Sipnosis: Esto es un ejemplo de texto
+                        que aparecera sobre la imagen.
+                      </p>
+                      Actores:Actor 1, Actor 2.
+                    </div>
+                 </a>
+            </div>
+      </article>
+
+    <article class="grid-item">
+      <div class="card">
+              <div class="card-body">
+                <img     src="./img/elcamino.jpg"  alt="imagen aleatoria">
+              </div>
+              <a href="ficha.html">
+
+              <div class="card-overlay">
+                <h2>Titulo</h2>
+                <h3>Calificación: 8</h3>
+                <h4>2019</h4>
+                <p>Sipnosis: Esto es un ejemplo de texto
+                  que aparecera sobre la imagen.
+                </p>
+                Actores:Actor 1, Actor 2.
+              </div>
+            </a>
+          </div>
+    </article>
+
+    <article class="grid-item">
+        <div class="card">
+                <div class="card-body">
+                  <img    src="./img/elirlandes.jpg"
+                  alt="El irlandés"  /> 
+                </div>
+                <a href="ficha.html">
+                      <div class="card-overlay">
+                        <h2>Titulo</h2>
+                        <h3>Calificación: 8</h3>
+                        <h4>2019</h4>
+                        <p>Sipnosis: Esto es un ejemplo de texto
+                          que aparecera sobre la imagen.
+                        </p>
+                        Actores:Actor 1, Actor 2.
+                      </div>
+              </a>
+            </div>
+      </article>
+
+      <article class="grid-item">
+          <div class="card">
+                  <div class="card-body">
+                    <img     src="./img/estafadoraswallstreet.jpg"
+                    alt="EStafadoras WallStreet"  /> 
+                  </div>
+                  <a href="ficha.html">
+                        <div class="card-overlay">
+                          <h2>Titulo</h2>
+                          <h3>Calificación: 8</h3>
+                          <h4>2019</h4>
+                          <p>Sipnosis: Esto es un ejemplo de texto
+                            que aparecera sobre la imagen.
+                          </p>
+                          Actores:Actor 1, Actor 2.
+                        </div>
+                </a>
+              </div>
+        </article>
+    </div>
+
+    <h2>SERIES</h2>
+    <div class="grid-container">           
+       
+        <article class="grid-item">
+            <div class="card">
+                    <div class="card-body">
+                      <img     src="./img/estafadoraswallstreet.jpg"
+                      alt="EStafadoras WallStreet"  /> 
+                    </div>
+                    <a href="ficha.html">
+                          <div class="card-overlay">
+                            <h2>Titulo</h2>
+                            <h3>Calificación: 8</h3>
+                            <h4>2019</h4>
+                            <p>Sipnosis: Esto es un ejemplo de texto
+                              que aparecera sobre la imagen.
+                            </p>
+                            Actores:Actor 1, Actor 2.
+                          </div>
+                  </a>
+                </div>
+          </article>
+
+      <article class="grid-item">
+          <div class="card">
+                  <div class="card-body">
+                    <img     src="./img/dance.jpg"
+                    alt="Lets Dance"  /> 
+                  </div>
+                  <a href="ficha.html">
+                        <div class="card-overlay">
+                          <h2>Lets Dance</h2>
+                          <h3>* * * *</h3>
+                          <h4>2019</h4>
+                          <p>Sipnosis: Joseph, un apasionado bailarín de hip-hop, se niega a entrar en la compañía de su padre para probar suerte en París.
+                          </p>
+                          Actores:Actor 1, Actor 2.
+                        </div>
+                </a>
+              </div>
+        </article>
+     
+
+        <article class="grid-item">
+            <div class="card">
+                    <div class="card-body">
+                      <img     src="./img/dark.jpg"
+                      alt="Are You Afraid of the Dark? "  /> 
+                    </div>
+                    <a href="ficha.html">
+                          <div class="card-overlay">
+                            <h2>Are You Afraid of the Dark? </h2>
+                            <h3>* * *</h3>
+                            <h4>2019</h4>
+                            <p>Esta serie limitada independiente de tres partes trata sobre el miembro más nuevo de la Sociedad de Medianoche, su primer cuento de miedo y lo que le sucede al grupo cuando los terribles eventos de su historia comienzan a suceder en su pequeña ciudad.
+                            </p>
+                            Actores:Actor 1, Actor 2.
+                          </div>
+                  </a>
+                </div>
+          </article>
+
+   
+    <article class="grid-item">
+        <div class="card">
+                <div class="card-body">
+                  <img     src="./img/creepshow.jpg"
+                  alt="Creepshow(2019)"  /> 
+                </div>
+                <a href="ficha.html">
+                      <div class="card-overlay">
+                        <h2>Creepshow</h2>
+                        <h3>* * *</h3>
+                        <h4>2019</h4>
+                        <p>Sipnosis:Basándose en la icónica antología de películas escritas por Stephen King y dirigidas por George Romero, cada episodio de la serie consta de dos capítulos con historias originales dirigidos por diferentes directores.
+                        </p>
+                        Actores:Actor 1, Actor 2.
+                      </div>
+              </a>
+            </div>
+      </article>
+      <article class="grid-item">
+          <div class="card">
+                  <div class="card-body">
+                    <img     src="./img/desencanto.jpg"
+                    alt="Desencanto"  /> 
+                  </div>
+                  <a href="ficha.html">
+                        <div class="card-overlay">
+                          <h2>(Des)encanto </h2>
+                          <h3>* * * </h3>
+                          <h4>2018</h4>
+                          <p>Sipnosis: Nueva serie de animación de Matt Groening, ahora ambientada en la Edad Media y que narra las desventuras de una princesa aficionada a la bebida, su enérgico acompañante elfo y su demonio particular. 
+                          </p>
+                          Actores:Actor 1, Actor 2.
+                        </div>
+                </a>
+              </div>
+        </article>
+  </div>
+
+    <h2>PELICULAS</h2>
+    <div class="grid-container">           
+        <article class="grid-item">
+            <div class="card">
+                    <div class="card-body">
+                      <img     src="./img/strange.jpg"
+                      alt="EStafadoras WallStreet"  /> 
+                    </div>
+                    <a href="ficha.html">
+                          <div class="card-overlay">
+                            <h2>Strange Angel</h2>
+                            <h3>* * * * : 8</h3>
+                            <h4>2019</h4>
+                            <p>Sipnosis: Jack Parsons es un brillante y ambicioso trabajador del Los Ángeles de los años 30 que empezó como conserje en una planta química, pero cuyos sueños le llevaron a desarrollar la disciplina de los cohetes.
+                            </p>
+                            Actores:Actor 1, Actor 2.
+                          </div>
+                  </a>
+                </div>
+          </article>
+      
+          <article class="grid-item">
+              <div class="card">
+                      <div class="card-body">
+                        <img     src="./img/atlantics.jpg"
+                        alt="EStafadoras WallStreet"  /> 
+                      </div>
+                      <a href="ficha.html">
+                            <div class="card-overlay">
+                              <h2>Atlantics</h2>
+                              <h3>* * * * </h3>
+                              <h4>2019</h4>
+                              <p>Sipnosis: A lo largo de la costa atlántica, una torre futurista que pronto será inaugurada se cierne sobre un suburbio de Dakar. Ada, de 17 años, está enamorada de Souleimane, un joven trabajador de la construcción. Pero ella ha sido prometida a otro hombre. 
+                              </p>
+                              Actores: Abdou Balde, Aminata Kane, Ibrahima Mbaye
+                            </div>
+                    </a>
+                  </div>
+            </article>
+
+      <article class="grid-item">
+        <div class="card">
+                <div class="card-body">
+                  <img     src="./img/rambo.jpg"  alt="Rambo">
+                </div>              
+                <a href="ficha.html">
+                    <div class="card-overlay">
+                      <h2>Atlantics</h2>
+                      <h3>* * * * </h3>
+                      <h4>2019</h4>
+                      <p>Sipnosis:      Después de haber vivido un infierno, John Rambo se retira a su rancho familiar, pero su descanso se ve interrumpido por la desaparición de su ahijada tras cruzar la frontera con México
+                        </p>
+                      Actores: Abdou Balde, Aminata Kane, Ibrahima Mbaye
+                    </div>
+            </a>
+            </div>
+      </article>
+
+      <article class="grid-item">
+          <div class="card">
+                  <div class="card-body">
+                    <img     src="./img/downton.jpg"
+                    alt="Downton Abbey"  /> 
+                  </div>
+                  <a href="ficha.html">
+                        <div class="card-overlay">
+                          <h2>Downton Abbey</h2>
+                          <h3>* * * * *: 8</h3>
+                          <h4>2019</h4>
+                          <p>Sipnosis: 1927. La familia Crawley y su carismática servidumbre se preparan para el momento más crucial de sus vidas
+                          </p>
+                          Actores:Actor 1, Actor 2.
+                        </div>
+                </a>
+              </div>
+        </article>
+
+   <article class="grid-item">
+          <div class="card">
+                  <div class="card-body">
+                    <img     src="./img/estafadoraswallstreet.jpg"
+                    alt="EStafadoras WallStreet"  /> 
+                  </div>
+                  <a href="ficha.html">
+                        <div class="card-overlay">
+                          <h2>Titulo</h2>
+                          <h3>Calificación: 8</h3>
+                          <h4>2019</h4>
+                          <p>Sipnosis: Esto es un ejemplo de texto
+                            que aparecera sobre la imagen.
+                          </p>
+                          Actores:Actor 1, Actor 2.
+                        </div>
+                </a>
+              </div>
+        </article>
+</div>
+</section>
+
+<footer> 
+  <section class="redes-sociales">
+   <div class="contenedor">
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+     </div>
+     <p>© 2019 Go! Peliculas Online, Todos los Derechos Reservados</p>
+  </section>
+</footer> 
+
+</body>
+</html>

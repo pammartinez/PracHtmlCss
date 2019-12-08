@@ -1,0 +1,176 @@
+/*Ficha de pelicula/serie.*/
+body{
+  background-color: rgba(15, 15, 15, 0.9);
+  color: #ffffff;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100%v;
+}
+
+.grid-container-fichas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 80px auto 80px auto 80px auto;*/
+  gap: 1rem 3rem;
+}
+
+.card-fichas {
+position: relative;
+/*height: 400px;*/
+overflow: hidden;
+}
+
+.grid-item-fichas{
+    background-color: rgb(232, 238, 240);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px goldenrod;
+    position:relative;
+    padding : 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   .grid-item-fichas:hover .card-fichas:hover .card-overlay-fichas {
+  /* visibility: visible;    background-color: rgb(27, 25, 25); */
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-overlay-fichas {
+  position: absolute;
+  top: 0;
+  /*bottom:0*/
+  background-color: rgba(0, 0, 0, .5);
+  color: rgb(241, 237, 228);
+  padding: .25rem;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  transform: translateY(100%);
+  opacity: 0;
+  /* visibility: hidden; */
+  cursor: pointer;
+  transition: all ease-in-out 500ms;
+  transition-delay: .25s;
+}
+
+/*Textos de fichas */
+ .actor{
+  text-align:center;
+  display:block;
+}
+  h2{
+    color : gainsboro;
+    text-align: center;
+  }
+  h4{
+    color : gainsboro;
+    text-align: center;
+    font-size:14px;
+  }
+  h5{
+    font-size:16px;
+    color : orange;
+    text-align: center;
+  }
+
+/*Estructura en columnas*/  
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(15, 15, 15, 0.9);
+}
+
+.descrip {
+  flex: 0 1 40%;
+  opacity: 1;
+  font-size:1rem;
+  padding:20px;
+  /* color : gainsboro; */
+}
+
+.skills {
+  flex: 0 1 40%;
+}
+
+.skill-name {
+  text-align: right;
+  margin-top: 1rem;
+}
+.skill img {
+ margin:10px;
+}
+
+.skill-75 {
+  width: 75%;
+}
+
+.skill-85 {
+  width: 85%;
+}
+
+.skill-95 {
+  width: 95%;
+}
+
+@media all and (max-width:768px) {
+  .grid-container-fichas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 80px auto 80px auto 80px auto;*/  
+  }
+
+  .two-columns {
+      flex-direction: column-reverse;
+      margin: auto .5rem; 
+      opacity:0.8;
+  }
+
+  .two-columns img {
+      display: block;
+      margin: 0 auto;
+  }
+
+  .skills {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .logo{
+    opacity:0.5;
+    color:red;
+  }
+ 
+}
+
+@media only screen and (max-width: 479px)   {
+  .grid-container-fichas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem 3rem;
+  }
+
+  .two-columns {
+    flex-direction: column-reverse;
+    margin: auto .5rem;
+}
+
+.two-columns img {
+    display: block;
+    margin: 0 auto;
+}
+
+.skills {
+    width: 90%;
+    margin: 0 auto;
+}
+.logo{
+  opacity:0.5;
+  color:green;
+}
+}
+
+

@@ -1,0 +1,159 @@
+body{
+  background-color: rgba(0,0,0,0.6);
+  color: #ffffff;
+}
+H2{
+  color : gainsboro;
+  text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 80px auto 80px auto 80px auto;*/
+    gap: 1rem 3rem;
+}
+
+.card {
+  position: relative;
+  /*height: 400px;*/
+  overflow: hidden;
+}
+.grid-item{
+      background-color: rgb(232, 238, 240);
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: solid 1px goldenrod;
+      position:relative;
+      padding : 10px;
+      margin: 0 auto;
+      overflow: hidden;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /*
+    .item1{
+      grid-column-start: 1;
+      grid-column-end: 6;
+      margin:0;
+      padding:0;
+      font-size: 16px;
+
+    .grid-item  a:hover {
+            opacity:1;
+     }
+     img:hover{
+        opacity:1;
+    }
+
+    .grid-item  a  img:hover{
+            opacity:1;
+     }
+
+       .grid-item   .ctxt{
+         position:absolute;
+         top:30%;
+         color:white;
+         text-align:center;
+         opacity:1;
+         z-index:99;
+     }
+    */
+    
+     .grid-item:hover .card:hover .card-overlay {
+    /* visibility: visible;    background-color: rgb(27, 25, 25); */
+    transform: translateY(0);
+    opacity: 1;
+  
+  }
+
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    /*bottom:0*/
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(241, 237, 228);
+    padding: .25rem;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    transform: translateY(100%);
+    opacity: 0;
+    /* visibility: hidden; */
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+    transition-delay: .25s;
+  }
+
+  .lupa{
+    position: relative;
+    top: 5px;
+    padding:5px;
+  }
+  i{
+    color: white;
+  }
+
+
+  footer .redes-sociales {
+    padding: 40px 0;
+    margin-bottom: 40px;
+      text-align: center;
+      background: #0c0e11;
+  }
+  
+  footer .redes-sociales .contenedor a {
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    line-height: 100px;
+    color:#fff;
+    text-align: center;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+  
+  }
+  
+  
+   .redes-sociales .contenedor .twitter {
+    background: #1da1f2;
+  }
+  
+   .redes-sociales .contenedor .facebook {
+    background:#3b5998;
+  
+  }
+  
+  .redes-sociales .contenedor .linkedin {
+    background:#0077B5;
+  
+  }
+  
+  
+  
+
+@media all and (max-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (max-width:340px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto;
+        gap: 1rem 3rem;
+    }
+    .item1{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin:0;
+      padding:0;
+      font-size: 16px;
+    }
+}
