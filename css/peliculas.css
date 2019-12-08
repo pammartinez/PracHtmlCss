@@ -65,7 +65,7 @@ H2{
     /* visibility: visible;    background-color: rgb(27, 25, 25); */
     transform: translateY(0);
     opacity: 1;
-  
+
   }
 
   .card-overlay {
@@ -97,7 +97,7 @@ H2{
 
   footer .redes-sociales {
     padding: 40px 0;
-    margin-bottom: 40px;
+    margin-bottom: 4px;
       text-align: center;
       background: #0c0e11;
   }
@@ -133,13 +133,21 @@ H2{
   
   }
   
-  
-  
-
 @media all and (max-width:768px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+
+    footer .redes-sociales .contenedor a {
+      font-size: 36px;
+    }
+    footer .redes-sociales {
+      padding: 10px 0;
+      margin-bottom: 10px;
+       text-align: center;
+    }
+
+   
 }
 
 @media all and (max-width:340px) {
@@ -156,4 +164,30 @@ H2{
       padding:0;
       font-size: 16px;
     }
+    footer .redes-sociales .contenedor a {
+      font-size: 25px;
+    }
+  .copy{
+    visibility: hidden;
+  }
+  footer .redes-sociales {
+    padding: 10px 0;
+    margin-bottom: 10px;
+     text-align: center;
+  }
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    /*bottom:0*/
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(241, 237, 228);
+    padding: .25rem;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden; 
+    cursor: pointer;
+
+  }
 }
